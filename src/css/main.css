@@ -184,15 +184,29 @@ p.skill-nav{
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    
+}
+
+.progress-m-title{
+    display: none;
 }
 
 .progress .progress-bar{
-    width: 80%;
+
     line-height: 2rem;
     background: #1e836c;
     position: relative;
 }
 
+.progress-bar.w-m-60 {
+    width: 48%;
+}
+.progress-bar.w-m-70 {
+    width: 56%;
+}
+.progress-bar.w-m-80 {
+    width: 66%;
+}
 .progress .progress-value{
     position: absolute;
     line-height: 2rem;
@@ -262,6 +276,26 @@ textarea{
     color:#1e836c;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
+    .progress .progress-title{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:720px){
+    .progress-title{
+        display: none;
+    }
+    .progress-m-title{
+        display: block;
+    }
 
+    .progress-bar.w-m-60 {
+        width: 60%;
+    }
+    .progress-bar.w-m-70 {
+        width: 70%;
+    }
+    .progress-bar.w-m-80 {
+        width: 80%;
+    }
 } 
