@@ -130,7 +130,7 @@ header {
     font-weight: 700;
 }
 
-.skill-nav a{
+a.skill-nav{
     font-family: 'Open Sans';
     color: #27323a;
     font-size: 1.5rem;
@@ -138,11 +138,11 @@ header {
     padding-bottom: 0.3rem;
 }
 
-.skill-nav a:hover{
+.skill-nav:hover{
     color: #45b29a;
 }
 
-.skill-nav a.active{
+.skill-nav.active{
     border-bottom: 5px solid #45b29a;
 }
 

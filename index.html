@@ -12,18 +12,13 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="src/css/main.css" />
 
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700" rel="stylesheet">
 
-    <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="src/js/main.js"></script>
+
 </head>
 
 <body>
@@ -38,7 +33,7 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav ml-5 mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link js--scroll-top" href="#top">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -47,7 +42,7 @@
                         <a class="nav-link" href="#passions">Passions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js--scroll-skills" href="#skills">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">contact me</a>
@@ -78,7 +73,7 @@
     </section>
 
     <!-- ABOUT ME -->
-    <section id="about">
+    <section data-aos="fade-up" data-aos-offset="400"  id="about">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12">
@@ -96,12 +91,12 @@
     </section>
 
     <!-- INTERESTS -->
-    <section id="passions">
+    <section data-aos="fade-up" data-aos-offset="400" id="passions">
         <h2>Passions</h2>
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-4">
-                    <div class="card-body">
+                    <div data-aos="fade-up" class="card-body">
                         <h1><i class="fas fa-gamepad my-4"></i></h1>
                         <h5 class="card-title my-4">GAMING</h5>
                         <p class="card-text">My love for games came from long time ago, when I played with my cousins
@@ -111,7 +106,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-body">
+                    <div data-aos="fade-up" class="card-body">
                         <h1><i class="fas fa-cogs my-4"></i></h1>
                         <h5 class="card-title my-4">TECHNOLOGY</h5>
                         <p class="card-text">Tech is present everywhere, so one of my main goals is to understand as
@@ -122,7 +117,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card-body">
+                    <div data-aos="fade-up" class="card-body">
                         <h1><i class="fas fa-book-open my-4"></i></h1>
                         <h5 class="card-title my-4">EDUCATION</h5>
                         <p class="card-text">The only thing that lasts forever is knowledge so we must spread
@@ -135,18 +130,18 @@
         </div>
     </section>
     <!-- SKILLS -->
-    <section id="skills">
+    <section data-aos="fade-up" data-aos-offset="400" id="skills">
         <h2>Skills</h2>
         <div class="container my-5">
             <div class="row justify-content-center" id="skillNav">
                 <div class="col-2">
-                    <h3 class="skill-nav" data-target="#skillCarousel" data-slide-to="0"><a href="#" class="active">Tech</a></h3>
+                    <h3><a href="#" class="skill-nav active" data-target="#skillCarousel" data-slide-to="0">Tech</a></h3>
                 </div>
                 <div class="col-2">
-                    <h3 class="skill-nav" data-target="#skillCarousel" data-slide-to="1"><a href="#">Social</a></h3>
+                    <h3><a href="#" class="skill-nav" data-target="#skillCarousel" data-slide-to="1">Social</a></h3>
                 </div>
                 <div class="col-2">
-                    <h3 class="skill-nav" data-target="#skillCarousel" data-slide-to="2"><a href="#">Education</a></h3>
+                    <h3><a href="# " class="skill-nav " data-target="#skillCarousel" data-slide-to="2">Education</a></h3>
                 </div>
             </div>
             <div id="skillCarousel" class="carousel slide mt-5" data-interval="">
@@ -278,7 +273,7 @@
                                 <div class="col-12 mt-4 text-left">
                                     <h3>Universidade de São Paulo - Escola Politécnica</h3>
                                     <p><em>2015 - Current</em></p>
-                                    <p>Electronics Technical Course</p>
+                                    <p>Electrical Engineering Degree</p>
                                 </div>
                                 <div class="col-12 mt-4 text-right">
                                     <h3>UFABC - Universidade Federal do ABC</h3>
@@ -298,7 +293,7 @@
         </div>
     </section>
     <!-- CONTACT ME! -->
-    <section id="contact">
+    <section data-aos="fade-up" data-aos-offset="400" id="contact">
         <h2>MAIL ME!</h2>
         <p class="my-5">Have a question or want to work together?</p>
         <div class="container my-5">
@@ -318,6 +313,18 @@
     <section id="footer">
         <p>Made with love by <a href="https://twitter.com/SquirTsuuu">SquirTsuuu</a></p>
     </section>
+
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
