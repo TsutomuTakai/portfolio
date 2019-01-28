@@ -38,8 +38,23 @@ p{
     background-color: transparent;
 }
 
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: 700;
+    color: #45b29a;
+}
+
+.navbar-dark .navbar-nav .nav-link i{
+    font-size: 2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link i:hover {
+    font-weight: 700;
+    color: #45b29a;
+}
+
 .navbar-dark{
     background-color: #27323a;
+    color: #45b29a;
 }
 
 /* HERO */
@@ -130,16 +145,18 @@ header {
     font-weight: 700;
 }
 
-a.skill-nav{
+p.skill-nav{
     font-family: 'Open Sans';
     color: #27323a;
     font-size: 1.5rem;
     text-decoration: none;
     padding-bottom: 0.3rem;
+    cursor: pointer;
 }
 
 .skill-nav:hover{
     color: #45b29a;
+
 }
 
 .skill-nav.active{
@@ -244,3 +261,7 @@ textarea{
 #footer a:hover{
     color:#1e836c;
 }
+
+@media only screen and (max-width: 600px) {
+
+} 

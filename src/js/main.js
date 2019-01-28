@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
 
-    $('#skillNav').on('click', 'a', function () {
-        $('a').removeClass('active');
+    $('#skillNav').on('click', 'p', function () {
+        $('p').removeClass('active');
         $(this).addClass('active');
     });
 
